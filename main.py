@@ -40,7 +40,10 @@ if __name__ == "__main__":
                     cash = new_price * held
                     held = 0.0
 
-                print(float(history.loc[len(history) - 1].iloc[0]), normalized, decision, cash, held)
+                # print(float(history.loc[len(history) - 1].iloc[0]), normalized, decision, cash, held)
                 print(f"Current Price: {float(history.loc[len(history) - 1].iloc[0])}")
+                print(f"Current held: {held}")
+                print(f"Current cash: {cash}")
+                print("\n")
                 
             price = new_price
